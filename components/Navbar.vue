@@ -9,7 +9,7 @@
           v-for="(navButton, index) in navButtonData"
           :key="index"
           :to="`${navButton.to}`"
-          class="hover:text-purple transition-all duration-400"
+          class="hover:text-purple transition-all duration-300"
           >{{ navButton.title }}</nuxt-link
         >
       </div>
