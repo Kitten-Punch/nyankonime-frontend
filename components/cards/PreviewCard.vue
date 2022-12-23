@@ -1,6 +1,6 @@
 <template>
   <div class="mx-auto">
-    <div class="w-60">
+    <div class="w-60 hover:cursor-pointer">
       <div class="h-32 w-60 relative rounded-lg overflow-hidden">
         <div
           class="absolute top-[10px] right-0 bg-[rgba(113,95,221,0.8)] text-white font-semibold font-noto text-sm px-4 py-1 rounded-l-full"

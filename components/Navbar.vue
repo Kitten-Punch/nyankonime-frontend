@@ -5,10 +5,13 @@
     >
       <img src="~/assets/logo.png" class="h-6 w-auto object-contain" />
       <div class="grid grid-flow-col gap-4 items-center text-white">
-        <a href="#">Home</a>
-        <a href="#">Genres</a>
-        <a href="#">Anime Lists</a>
-        <a href="#">Jadwal</a>
+        <nuxt-link
+          v-for="(navButton, index) in navButtonData"
+          :key="index"
+          :to="`${navButton.to}`"
+          class="hover:text-purple transition-all duration-400"
+          >{{ navButton.title }}</nuxt-link
+        >
       </div>
     </div>
   </nav>
@@ -17,5 +20,27 @@
 <script>
 export default {
   name: "Navbar",
+  data() {
+    return {
+      navButtonData: [
+        {
+          title: "Home",
+          to: "/",
+        },
+        {
+          title: "Genres",
+          to: "/genres",
+        },
+        {
+          title: "Anime Lists",
+          to: "/lists",
+        },
+        {
+          title: "Jadwal",
+          to: "/jadwal",
+        },
+      ],
+    };
+  },
 };
 </script>
