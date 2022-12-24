@@ -52,4 +52,7 @@ export default {
   webpack: {
     exprContextCritical: false,
   },
+  generate: {
+    dir: "dist",
+  },
 };
